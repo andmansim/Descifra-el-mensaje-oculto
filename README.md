@@ -6,3 +6,4 @@ El cifrado Atbash se basa en reescribir el mensaje original utilizando las letra
 
 
 La fórmula sería: resultado += zxy[abc.index(letra)] --> donde buscamos las letras correspondientes y las acumulamos para generar la clave. 
+clave  = sumatorio (27 - xi)
