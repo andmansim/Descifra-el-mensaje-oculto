@@ -5,14 +5,14 @@ def abclave(original, preguntita):
   resultado = ''
   
   if preguntita == 'c':
-    abc = abc
-    zyx = zyx
+    abcz = abc
+    zyxa = zyx
   else:
-    abc = zyx
-    zyx = abc
+    abcz = zyx
+    zyxa = abc
     
   for i in original:
-    resultado += zyx[abc.index(i)]
+    resultado += zyxa[abcz.index(i)]
   return resultado
 
 
