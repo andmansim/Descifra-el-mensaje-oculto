@@ -5,9 +5,11 @@ def abclave(original, preguntita):
   resultado = ''
   
   if preguntita == 'c':
-    abc, zyx = abc, zyx
+    abc = abc
+    zyx = zyx
   else:
-    abc, zyx = zyx, abc
+    abc = zyx
+    zyx = abc
     
   for i in original:
     resultado += zyx[abc.index(i)]
@@ -18,7 +20,7 @@ def abclave(original, preguntita):
 if __name__ == '__main__':
   preguntita = input('Quieres cifrar o descifrar? (c/d): ')
   original = input("Introduzca la clave: ")
-  original.upper()
+  original = original.upper()
   resultado = abclave(original, preguntita)
   print(resultado)
 
